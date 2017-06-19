@@ -1,0 +1,38 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@font-face {
+    font-family: "Oh Wonder Regular";
+    src: url('/assets/Ohwonder-Regular.otf');
+}
+@font-face {
+    font-family: "Beautiful Creatures";
+    src: url('/assets/Beautiful_Creatures.ttf');
+}
+
+.container h2 {
+    font-family: "Beautiful Creatures";
+    text-align: center;
+    font-size: 6em;
+}
+
+#carousel {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+
+.item {
+    max-width: 75%;
+    max-height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 12.5%;
+    margin-left: 12.5%;
+    transition:1s ease-in-out left;
+    border-radius: 12px;
+}
+
+.carousel-inner > .item {
+transform: translate3d(0,0,0) !important;
+}
