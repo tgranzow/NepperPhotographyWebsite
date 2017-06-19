@@ -1,0 +1,22 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@font-face {
+    font-family: "Oh Wonder Regular";
+    src: url('/assets/Ohwonder-Regular.otf');
+}
+@font-face {
+    font-family: "Beautiful Creatures";
+    src: url('/assets/Beautiful_Creatures.ttf');
+}
+
+img {
+    max-height: 500px;
+}
+
+.about-pic {
+    text-align: center;
+}
+
+.about-blurb p {
+    font-size: 1.5em;
+}
