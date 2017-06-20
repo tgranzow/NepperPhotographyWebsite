@@ -11,6 +11,21 @@ class PagesController < ApplicationController
   def portfolio
   end
 
+  def wedding
+  end
+
+  def engagement
+  end
+
+  def family
+  end
+
+  def product_photography
+  end
+
+  def scenic_photography
+  end
+
   def client_viewing
   end
 

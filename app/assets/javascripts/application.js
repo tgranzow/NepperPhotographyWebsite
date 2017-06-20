@@ -1,3 +1,5 @@
+// app/assets/javascripts/wedding.js
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -13,6 +15,7 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
+//= require photoswipe
 //= require turbolinks
 //= require_tree .
 

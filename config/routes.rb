@@ -6,6 +6,16 @@ Rails.application.routes.draw do
 
   get 'pages/portfolio'
 
+  get 'pages/wedding'
+
+  get 'pages/engagement'
+
+  get 'pages/family'
+
+  get 'pages/product_photography'
+
+  get 'pages/scenic_photography'
+
   get 'pages/client_viewing'
 
   get 'pages/pricing'

@@ -1,5 +1,6 @@
 @import "home.scss";
 @import "about.scss";
+@import "portfolio.scss";
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -15,6 +16,10 @@
     font-family: "Beautiful Creatures";
     src: url('/assets/Beautiful_Creatures.ttf');
 }
+@font-face {
+    font-family: "Audrey-Normal";
+    src: url('/assets/Audrey-Normal.otf');
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -28,9 +33,12 @@
  * It is generally better to create a new file per style scope.
  *= require_tree .
  *= require_self
+ *= require photoswipe
  */
-body {
-    font-family: 'Montserrat', sans-serif;
+html, body {
+    font-family: "Audrey-Normal", sans-serif;
+    height: 99%;
+    margin: 0;
 }
 
  a,
@@ -38,6 +46,11 @@ body {
  a:hover {
    color: black;
    font-size: 1em;
+ }
+
+ .wrapper {
+   min-height: 99%;
+   margin-bottom: -50px;
  }
 
 .navbar-nav {
@@ -52,10 +65,11 @@ body {
 }
 
 .nav-name {
-    font-family: "Beautiful Creatures";
-    font-size: 4em;
+    font-family: "Audrey-Normal";
+    font-size: 3em;
     width: 100%;
     vertical-align: middle;
+    margin-left: 20px;
 }
 .nep-img {
     width: 60px;
@@ -64,6 +78,24 @@ body {
 }
 
 .web-title {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*
+* Footer styles
+*/
+
+.footer,
+.push {
+  height: 50px;
+}
+
+.site-footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .5rem;
     text-align: center;
 }
 #social-icons {

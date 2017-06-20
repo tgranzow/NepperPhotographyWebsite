@@ -8,7 +8,10 @@
     font-family: "Beautiful Creatures";
     src: url('/assets/Beautiful_Creatures.ttf');
 }
-
+@font-face {
+    font-family: "Audrey-Normal";
+    src: url('/assets/Audrey-Normal.otf');
+}
 img {
     max-height: 500px;
 }
@@ -16,7 +19,9 @@ img {
 .about-pic {
     text-align: center;
 }
-
+.about-blurb {
+    font-family: "Audrey-Normal";
+}
 .about-blurb p {
     font-size: 1.5em;
 }

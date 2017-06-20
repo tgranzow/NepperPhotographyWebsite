@@ -8,11 +8,14 @@
     font-family: "Beautiful Creatures";
     src: url('/assets/Beautiful_Creatures.ttf');
 }
-
+@font-face {
+    font-family: "Audrey-Normal";
+    src: url('/assets/Audrey-Normal.otf');
+}
 .container h2 {
-    font-family: "Beautiful Creatures";
+    font-family: "Audrey-Normal";
     text-align: center;
-    font-size: 6em;
+    font-size: 4em;
 }
 
 #carousel {
