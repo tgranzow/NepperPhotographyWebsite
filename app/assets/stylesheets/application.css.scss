@@ -3,6 +3,10 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 @font-face {
     font-family: "Oh Wonder Regular";
     src: url('/assets/Ohwonder-Regular.otf');
@@ -25,6 +29,9 @@
  *= require_tree .
  *= require_self
  */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
  a,
  a:focus,
@@ -46,8 +53,26 @@
 
 .nav-name {
     font-family: "Beautiful Creatures";
-    float: left;
     font-size: 4em;
     width: 100%;
+    vertical-align: middle;
+}
+.nep-img {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.web-title {
     text-align: center;
+}
+#social-icons {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.fa {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-bottom: 20px;
 }
