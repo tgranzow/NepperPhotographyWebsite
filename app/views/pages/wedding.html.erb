@@ -1,1 +1,65 @@
-<%= render 'shared/lightbox' %>
+<div class="container">
+    <div class="box-row">
+      <div class="box-column">
+        <%= image_tag("couple", onclick: "openModal();currentSlide(1)", class: "box-hover-shadow" ) %>
+      </div>
+      <div class="box-column">
+        <%= image_tag("LisDan", onclick: "openModal();currentSlide(2)", class: "box-hover-shadow" ) %>
+      </div>
+      <div class="box-column">
+        <%= image_tag("couple", onclick: "openModal();currentSlide(3)", class: "box-hover-shadow" ) %>
+      </div>
+      <div class="box-column">
+        <%= image_tag("LisDan", onclick: "openModal();currentSlide(4)", class: "box-hover-shadow" ) %>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="box-close cursor" onclick="closeModal()">X</span>
+      <div class="modal-content">
+
+        <div class="box-mySlides">
+          <div class="box-numbertext">1 / 4</div>
+            <%= image_tag("couple", class: "box-mySlides-img") %>
+        </div>
+
+        <div class="box-mySlides">
+          <div class="box-numbertext">2 / 4</div>
+            <%= image_tag("LisDan", class: "box-mySlides-img") %>
+        </div>
+
+        <div class="box-mySlides">
+          <div class="box-numbertext">3 / 4</div>
+            <%= image_tag("couple", class: "box-mySlides-img") %>
+        </div>
+
+        <div class="box-mySlides">
+          <div class="box-numbertext">4 / 4</div>
+            <%= image_tag("LisDan", class: "box-mySlides-img") %>
+        </div>
+
+        <a class="box-prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="box-next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- <div class="caption-container">
+          <p id="caption"></p>
+        </div> -->
+
+        <div class="modal-box-column">
+          <%= image_tag("couple", class: "box-demo", onclick: "currentSlide(1)", alt: "Couple") %>
+        </div>
+
+        <div class="modal-box-column">
+          <%= image_tag("LisDan", class: "box-demo", onclick: "currentSlide(2)", alt: "wedding") %>
+        </div>
+
+        <div class="modal-box-column">
+          <%= image_tag("couple", class: "box-demo", onclick: "currentSlide(3)", alt: "Couple") %>
+        </div>
+
+        <div class="modal-box-column">
+          <%= image_tag("LisDan", class: "box-demo", onclick: "currentSlide(4)", alt: "wedding") %>
+        </div>
+      </div>
+    </div>
+</div>
