@@ -1,4 +1,7 @@
 <div class="container">
+    <div class="portfolio-heading">
+        <h1>Wedding Portfolio</h1>
+    </div>
     <div class="box-row">
       <div class="box-column">
         <%= image_tag("couple", onclick: "openModal();currentSlide(1)", class: "box-hover-shadow" ) %>
@@ -45,20 +48,22 @@
           <p id="caption"></p>
         </div> -->
 
-        <div class="modal-box-column">
-          <%= image_tag("couple", class: "box-demo", onclick: "currentSlide(1)", alt: "Couple") %>
-        </div>
+        <div id="modal-content-container">
+            <div class="modal-box-column">
+              <%= image_tag("couple", class: "box-demo", onclick: "currentSlide(1)", alt: "Couple") %>
+            </div>
 
-        <div class="modal-box-column">
-          <%= image_tag("LisDan", class: "box-demo", onclick: "currentSlide(2)", alt: "wedding") %>
-        </div>
+            <div class="modal-box-column">
+              <%= image_tag("LisDan", class: "box-demo", onclick: "currentSlide(2)", alt: "wedding") %>
+            </div>
 
-        <div class="modal-box-column">
-          <%= image_tag("couple", class: "box-demo", onclick: "currentSlide(3)", alt: "Couple") %>
-        </div>
+            <div class="modal-box-column">
+              <%= image_tag("couple", class: "box-demo", onclick: "currentSlide(3)", alt: "Couple") %>
+            </div>
 
-        <div class="modal-box-column">
-          <%= image_tag("LisDan", class: "box-demo", onclick: "currentSlide(4)", alt: "wedding") %>
+            <div class="modal-box-column">
+              <%= image_tag("LisDan", class: "box-demo", onclick: "currentSlide(4)", alt: "wedding") %>
+            </div>
         </div>
       </div>
     </div>

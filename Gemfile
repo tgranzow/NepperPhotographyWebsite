@@ -56,4 +56,4 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
 gem 'font-awesome-sass'
 
-gem 'photoswipe-rails', '~> 4.1', '>= 4.1.2'
+gem 'carrierwave', '~> 1.1'

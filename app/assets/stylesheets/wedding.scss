@@ -1,3 +1,7 @@
+.portfolio-heading {
+    text-align: center;
+}
+
 .box-row > .box-column {
   padding: 0 8px;
 }
@@ -60,6 +64,12 @@
 
 .box-mySlides {
   display: none;
+
+}
+.box-mySlides img {
+    margin-top: 10px;
+    margin-left: 18%;
+    margin-right: 18%;
 }
 
 /* Next & previous buttons */
@@ -101,6 +111,12 @@
   top: 0;
 }
 
+#modal-content-container {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 18%;
+    margin-right: 18%;
+}
 
 img.box-demo {
   opacity: 0.6;
