@@ -33,9 +33,9 @@
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content1 {
   position: relative;
-  background-color: #fefefe;
+  background-color: rgb(251, 251, 251);
   margin: auto;
   padding: 0;
   width: 90%;
@@ -48,11 +48,11 @@
 /* The Close Button */
 .box-close {
   font-family: sans-serif;
-  color: white;
+  color: rgb(193, 193, 193);
   position: absolute;
   top: 10px;
   right: 25px;
-  font-size: 35px;
+  font-size: 20px;
 }
 
 .box-close:hover,
@@ -81,9 +81,9 @@
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: rgb(193, 193, 193);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 40px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -99,12 +99,12 @@
 /* On hover, add a black background color with a little bit see-through */
 .box-prev:hover,
 .box-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(185, 185, 184, 0.7);
 }
 
 /* Number text (1/3 etc) */
 .box-numbertext {
-  color: #f2f2f2;
+  color: rgb(193, 193, 193);
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;

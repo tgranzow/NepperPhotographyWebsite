@@ -57,3 +57,6 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'font-awesome-sass'
 
 gem 'carrierwave', '~> 1.1'
+gem 'mini_magick', '~> 4.7', '>= 4.7.2'
+gem 'carrierwave-aws', '~> 1.1'
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'

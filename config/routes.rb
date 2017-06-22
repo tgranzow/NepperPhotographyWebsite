@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :photo_uploads
   get 'pages/about'
 
   get 'pages/client_testimonials'
