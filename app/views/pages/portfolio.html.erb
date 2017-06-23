@@ -1,14 +1,33 @@
 <div class="container">
-
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card", style="width: 10rem;">
-              <%= image_tag("couple", class: "card-img-top")%>
-              <div class="card-block">
-                <h4 class="card-title">Wedding Photography</h4>
-                <a><%= link_to "Click Here", pages_wedding_path, class: "btn btn-primary" %> </a>
-              </div>
-            </div>
+    <h1 id="port-title">Portfolio</h1>
+    <div class="card animated fadeInLeft">
+        <%= image_tag("couple", class: "card-img-top img responsive")%>
+        <div class="card-block">
+            <a><%= link_to "Wedding Photography", pages_wedding_path, class: "btn btn-primary" %> </a>
+        </div>
+    </div>
+    <div class="card animated fadeInLeft">
+        <%= image_tag("engagement", class: "card-img-top img responsive")%>
+        <div class="card-block">
+            <a><%= link_to "Engagment Photography", pages_engagement_path, class: "btn btn-primary" %> </a>
+        </div>
+    </div>
+    <div class="card animated fadeInLeft">
+        <%= image_tag("snow", class: "card-img-top img responsive")%>
+        <div class="card-block">
+            <a><%= link_to "Family Photography", pages_family_path, class: "btn btn-primary" %> </a>
+        </div>
+    </div>
+    <div class="card animated fadeInLeft">
+        <%= image_tag("violin", class: "card-img-top img responsive")%>
+        <div class="card-block">
+            <a><%= link_to "Product Photography", pages_product_photography_path, class: "btn btn-primary" %> </a>
+        </div>
+    </div>
+    <div class="card animated fadeInLeft">
+        <%= image_tag("balloon", class: "card-img-top img responsive")%>
+        <div class="card-block">
+            <a><%= link_to "Scenic Photography", pages_scenic_photography_path, class: "btn btn-primary" %> </a>
         </div>
     </div>
 </div>
