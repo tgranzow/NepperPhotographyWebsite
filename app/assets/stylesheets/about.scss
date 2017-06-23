@@ -12,8 +12,10 @@
     font-family: "Audrey-Normal";
     src: url('/assets/Audrey-Normal.otf');
 }
+
+
 img {
-    max-height: 500px;
+    max-height: 600px;
 }
 
 .about-pic {
@@ -24,4 +26,7 @@ img {
 }
 .about-blurb p {
     font-size: 1.5em;
+}
+.about-par {
+    margin-bottom: 20px;
 }
