@@ -1,12 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-@font-face {
-    font-family: "Audrey-Normal";
-    src: url('/assets/Audrey-Normal.otf');
-}
 
 #port-title {
+    font-family: "Raleway";
+    font-weight: 100;
     margin-top: -7px;
     text-align: center;
 }
@@ -52,6 +50,8 @@ a {
 }
 
 a.btn.btn-primary {
+    font-family: "Raleway";
+    font-weight: 100;
     background-color: black;
     font-size: 1.2em;
 }

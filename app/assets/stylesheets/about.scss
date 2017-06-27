@@ -1,30 +1,25 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@font-face {
-    font-family: "Oh Wonder Regular";
-    src: url('/assets/Ohwonder-Regular.otf');
-}
-@font-face {
-    font-family: "Beautiful Creatures";
-    src: url('/assets/Beautiful_Creatures.ttf');
-}
-@font-face {
-    font-family: "Audrey-Normal";
-    src: url('/assets/Audrey-Normal.otf');
-}
+
 
 img {
     width: 100%;
 }
 
 .about-pic {
+    margin-top: 20px;
     text-align: center;
 }
 .about-blurb {
-    font-family: "Audrey-Normal";
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
 }
 .about-blurb p {
     font-size: 1.5em;
+}
+.about-blurb h1 {
+    font-family: "Raleway";
+    font-weight: 100;
 }
 .about-par {
     margin-bottom: 20px;

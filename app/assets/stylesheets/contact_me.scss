@@ -1,0 +1,45 @@
+.contact-card {
+    text-align: center;
+    padding:5px;
+    color: black;
+    border: solid 2px white;
+    border-radius: 12px;
+    background-color: black;
+    margin-top: 2%;
+}
+
+.contact-card h1 {
+    font-family: "Raleway";
+    font-weight: 100;
+    font-size: 4em;
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 0px;
+}
+.contact-card-info {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+}
+.contact-card-info p {
+    font-size: 2em;
+}
+
+.contact-card-info h3 {
+    font-family: "Raleway";
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 3em;
+}
+
+.email-link {
+    color: black;
+}
+.contact-card-text a:hover {
+    color: black;
+    text-decoration: underline;
+}
+.contact-blurb {
+    padding-top: 20px;
+}
