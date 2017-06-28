@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def client_testimonials
+      @testimonials = Testimonial.all 
   end
 
   def portfolio
