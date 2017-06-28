@@ -15,9 +15,9 @@
           <tr>
               <div id="testimonial">
                 <td id="testimonial-index-post"><%= testimonial.posts %></td>
-                <td class="testimonial-crud"><%= link_to 'View', testimonial %></td>
-                <td class="testimonial-crud"><%= link_to 'Edit', edit_testimonial_path(testimonial) %></td>
-                <td class="testimonial-crud"><%= link_to 'Delete', testimonial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td class="testimonial-crud"><%= link_to 'View', testimonial, class: "btn-crud" %></td>
+                <td class="testimonial-crud"><%= link_to 'Edit', edit_testimonial_path(testimonial), class: "btn-crud" %></td>
+                <td class="testimonial-crud"><%= link_to 'Delete', testimonial, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-crud" %></td>
             </div>
 
           </tr>
