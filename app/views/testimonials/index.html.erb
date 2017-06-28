@@ -1,27 +1,31 @@
 <p id="notice"><%= notice %></p>
+<div class="container">
+    <h1>Testimonial Uploads</h1>
 
-<h1>Testimonial Uploads</h1>
+    <table>
+      <thead>
+        <tr>
+          <th class="testimonial-crud">Testimonials</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<table>
-  <thead>
-    <tr>
-      <th>Testimonials</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      <tbody>
+        <% @testimonials.each do |testimonial| %>
+          <tr>
+              <div id="testimonial">
+                <td id="testimonial-index-post"><%= testimonial.posts %></td>
+                <td class="testimonial-crud"><%= link_to 'View', testimonial %></td>
+                <td class="testimonial-crud"><%= link_to 'Edit', edit_testimonial_path(testimonial) %></td>
+                <td class="testimonial-crud"><%= link_to 'Delete', testimonial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </div>
 
-  <tbody>
-    <% @testimonials.each do |testimonial| %>
-      <tr>
-        <td><%= testimonial.posts %></td>
-        <td><%= link_to 'Show', testimonial %></td>
-        <td><%= link_to 'Edit', edit_testimonial_path(testimonial) %></td>
-        <td><%= link_to 'Destroy', testimonial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-<br>
+    <br>
 
-<%= link_to 'New Testimonial', new_testimonial_path %>
+    <%= link_to 'New Testimonial', new_testimonial_path, class: "testimonial-crud btn btn-primary" %>
+</div>
