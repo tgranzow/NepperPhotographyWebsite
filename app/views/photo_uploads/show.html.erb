@@ -1,9 +1,11 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Image:</strong>
-  <%= image_tag(@photo_upload.image) %>
-</p>
+    <div id="show-image-content">
+      <strong class="functional">Image:</strong>
+      <%= image_tag(@photo_upload.image, class: "show-img") %>
+  </div>
 
-<%= link_to 'Edit', edit_photo_upload_path(@photo_upload) %> |
-<%= link_to 'Back', photo_uploads_path %>
+    <%= link_to 'Edit', edit_photo_upload_path(@photo_upload), class: "functional" %> |
+    <%= link_to 'Back', photo_uploads_path, class: "functional" %>
+</div>

@@ -1,31 +1,33 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+    <p id="notice"><%= notice %></p>
 
-<h1>Blogs</h1>
+    <h1>Blogs</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Blurb</th>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <table class="blog-table">
+      <thead class="blog-head">
+        <tr class="blog-table-row">
+          <th class="functional">Title</th>
+          <th class="functional">Blurb</th>
+          <th class="functional">Image</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.blurb %></td>
-        <td><%= image_tag(blog.image) %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @blogs.each do |blog| %>
+          <tr class="blog-table-row">
+            <td><%= blog.title %></td>
+            <td><%= blog.blurb %></td>
+            <td><%= image_tag(blog.image, class: "thumbnail") %></td>
+            <td><%= link_to 'Show', blog, class: "btn-crud" %></td>
+            <td><%= link_to 'Edit', edit_blog_path(blog), class: "btn-crud" %></td>
+            <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-crud" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-<br>
+    <br>
 
-<%= link_to 'New Blog', new_blog_path %>
+    <%= link_to 'New Blog', new_blog_path, class: "btn btn-primary" %>
+</div>

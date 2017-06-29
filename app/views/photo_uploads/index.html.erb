@@ -1,27 +1,31 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+    <p id="notice"><%= notice %></p>
 
-<h1>Photo Uploads</h1>
+    <h1>Photo Uploads</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <table>
+      <thead>
+        <tr>
+          <th class="img-title">Image</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @photo_uploads.each do |photo_upload| %>
-      <tr>
-        <td><%= image_tag(photo_upload.image) %></td>
-        <td><%= link_to 'Show', photo_upload %></td>
-        <td><%= link_to 'Edit', edit_photo_upload_path(photo_upload) %></td>
-        <td><%= link_to 'Destroy', photo_upload, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @photo_uploads.each do |photo_upload| %>
+          <tr>
+              <div id="image-content">
+                <td><%= image_tag(photo_upload.image, class: "thumbnail") %></td>
+                <td><%= link_to 'Show', photo_upload, class: "btn-crud btn-crud-photo" %></td>
+                <td><%= link_to 'Edit', edit_photo_upload_path(photo_upload), class: "btn-crud btn-crud-photo" %></td>
+                <td><%= link_to 'Destroy', photo_upload, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-crud btn-crud-photo" %></td>
+            </div>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-<br>
+    <br>
 
-<%= link_to 'New Photo Upload', new_photo_upload_path %>
+    <%= link_to 'New Photo Upload', new_photo_upload_path, class: "btn btn-primary" %>
+</div>

@@ -1,19 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
+    <p>
+      <strong>Title:</strong>
+      <%= @blog.title %>
+    </p>
 
-<p>
-  <strong>Blurb:</strong>
-  <%= @blog.blurb %>
-</p>
+    <p>
+      <strong>Blurb:</strong>
+      <%= @blog.blurb %>
+    </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= image_tag(@blog.image) %>
-</p>
+    <p>
+      <strong>Image:</strong>
+      <%= image_tag(@blog.image, class: "show-img") %>
+    </p>
 
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+    <%= link_to 'Edit', edit_blog_path(@blog), class: "functional" %> |
+    <%= link_to 'Back', blogs_path, class: "functional" %>
+</div>
