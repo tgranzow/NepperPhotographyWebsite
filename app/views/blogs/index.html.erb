@@ -7,7 +7,7 @@
       <thead class="blog-head">
         <tr class="blog-table-row">
           <th class="functional">Title</th>
-          <th class="functional">Blurb</th>
+          <th class="functional">Blog Text</th>
           <th class="functional">Image</th>
           <th colspan="3"></th>
         </tr>
@@ -18,12 +18,16 @@
           <tr class="blog-table-row">
             <td><%= blog.title %></td>
             <td><%= blog.blurb %></td>
-            <td><%= image_tag(blog.image, class: "thumbnail") %></td>
-            <td><%= link_to 'Show', blog, class: "btn-crud" %></td>
-            <td><%= link_to 'Edit', edit_blog_path(blog), class: "btn-crud" %></td>
-            <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-crud" %></td>
+            <td> <%= image_tag(blog.images.first, class: "thumbnail") %>
+            </td>
+            <td><%= link_to 'View Blog', blog, class: "btn-crud" %></td>
+            <td><%= link_to 'Edit Blog', edit_blog_path(blog), class: "btn-crud" %></td>
+            <td><%= link_to 'Delete Blog', blog, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-crud" %></td>
           </tr>
         <% end %>
+
+
+        <hr>
       </tbody>
     </table>
 

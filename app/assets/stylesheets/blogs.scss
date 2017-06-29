@@ -1,3 +1,19 @@
-// Place all the styles related to the Blogs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*
+* Blogs home
+*/
+.blog-home-container {
+    width: 100%;
+    text-align: center;
+}
+.blog-home-img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+    max-height: 500px;
+    border: 5px solid #ddd;
+    box-shadow: 0 0 0 2pt black;
+    border-radius: 12px;
+}

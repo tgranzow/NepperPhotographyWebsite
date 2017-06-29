@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   end
 
   def client_testimonials
-      @testimonials = Testimonial.all 
+      @testimonials = Testimonial.all
   end
 
   def portfolio
@@ -37,5 +37,9 @@ class PagesController < ApplicationController
   end
 
   def blog
+      @blog = Blog.all
+  end
+
+  def blog_show
   end
 end
