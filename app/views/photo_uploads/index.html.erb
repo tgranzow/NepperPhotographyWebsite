@@ -15,10 +15,10 @@
         <% @photo_uploads.each do |photo_upload| %>
           <tr>
               <div id="image-content">
-                <td><%= image_tag(photo_upload.image, class: "thumbnail") %></td>
-                <td><%= link_to 'Show', photo_upload, class: "btn-crud btn-crud-photo" %></td>
-                <td><%= link_to 'Edit', edit_photo_upload_path(photo_upload), class: "btn-crud btn-crud-photo" %></td>
-                <td><%= link_to 'Destroy', photo_upload, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-crud btn-crud-photo" %></td>
+                <td><%= image_tag(photo_upload.images.first, class: "thumbnail") %></td>
+                <td><%= link_to 'View Images', photo_upload, class: "btn-crud btn-crud-photo" %></td>
+                <td><%= link_to 'Edit images', edit_photo_upload_path(photo_upload), class: "btn-crud btn-crud-photo" %></td>
+                <td><%= link_to 'Delete Images', photo_upload, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-crud btn-crud-photo" %></td>
             </div>
           </tr>
         <% end %>
