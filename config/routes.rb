@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
 
   resources :blogs
-  resources :photo_uploads
+  resources :photo_uploads do
+      resources :images, :only => [:create]
+  end
   resources :testimonials
-  
+
 
   get 'pages/about'
 
