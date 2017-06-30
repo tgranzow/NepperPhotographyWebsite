@@ -28,7 +28,7 @@ class PhotoUploadsController < ApplicationController
 
     respond_to do |format|
       if @photo_upload.save
-        format.html { redirect_to @photo_upload, notice: 'Photo upload was successfully created.' }
+        format.html { redirect_to @photo_upload, notice: 'Photo upload was successful.' }
         format.json { render :show, status: :created, location: @photo_upload }
       else
         format.html { render :new }
