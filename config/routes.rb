@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :admins
   resources :blogs
   resources :photo_uploads do
       resources :images, :only => [:create, :destroy]
