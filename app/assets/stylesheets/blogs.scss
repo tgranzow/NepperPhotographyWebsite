@@ -17,3 +17,22 @@
     box-shadow: 0 0 0 2pt black;
     border-radius: 12px;
 }
+
+.edit {
+    text-align: center;
+    vertical-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+input[type="file"] {
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.actions {
+    font-size: 1.2em;
+    padding-top: 30px;
+}
