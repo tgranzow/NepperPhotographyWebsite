@@ -1,0 +1,10 @@
+<ul class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Admin Functions
+      <span class="caret"></span></button>
+      <div class="dropdown-menu">
+         <div><%= link_to "Add a Testimonial", testimonials_path %></div>
+        <div><%= link_to "Add a Portfolio", photo_uploads_path %></div>
+        <div><%= link_to "Create a Blog", blogs_path %></div>
+        <div><%= link_to "Logout", destroy_admin_session_path, method: :delete %></li>
+    </div>
+</ul>
