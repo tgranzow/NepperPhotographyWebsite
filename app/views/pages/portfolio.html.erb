@@ -1,33 +1,11 @@
 <div class="container">
     <h1 id="port-title">Portfolio</h1>
+    <% @port.each do |photo_upload| %>
     <div class="card animated fadeInLeft">
-        <%= image_tag("couple", class: "card-img-top img responsive")%>
+        <%= image_tag(photo_upload.images.first, class: "card-img-top img responsive")%>
         <div class="card-block">
-            <a><%= link_to "Wedding Photography", pages_wedding_path, class: "btn btn-primary" %> </a>
+            <a><%= link_to "#{ photo_upload.portfolio_title}", photo_upload, class: "btn btn-primary" %> </a>
         </div>
     </div>
-    <div class="card animated fadeInLeft">
-        <%= image_tag("engagement", class: "card-img-top img responsive")%>
-        <div class="card-block">
-            <a><%= link_to "Engagment Photography", pages_engagement_path, class: "btn btn-primary" %> </a>
-        </div>
-    </div>
-    <div class="card animated fadeInLeft">
-        <%= image_tag("snow", class: "card-img-top img responsive")%>
-        <div class="card-block">
-            <a><%= link_to "Family Photography", pages_family_path, class: "btn btn-primary" %> </a>
-        </div>
-    </div>
-    <div class="card animated fadeInLeft">
-        <%= image_tag("violin", class: "card-img-top img responsive")%>
-        <div class="card-block">
-            <a><%= link_to "Product Photography", pages_product_photography_path, class: "btn btn-primary" %> </a>
-        </div>
-    </div>
-    <div class="card animated fadeInLeft">
-        <%= image_tag("balloon", class: "card-img-top img responsive")%>
-        <div class="card-block">
-            <a><%= link_to "Scenic Photography", pages_scenic_photography_path, class: "btn btn-primary" %> </a>
-        </div>
-    </div>
+    <% end %>
 </div>

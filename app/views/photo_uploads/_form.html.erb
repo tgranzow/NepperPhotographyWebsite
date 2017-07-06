@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :portfolio_title %>
+    <%= f.text_field :portfolio_title %>
+  </div>
+
+  <div class="field">
     <%= f.label :image %>
     <%= f.file_field :images, multiple: true %>
   </div>
