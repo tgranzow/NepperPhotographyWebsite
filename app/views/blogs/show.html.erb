@@ -1,6 +1,7 @@
 <div class="container blog-container">
     <p id="notice"><%= notice %></p>
     <div class="blog-layout">
+        <% if current_admin %>
         <div class="blog-title">
           <h1><%= @blog.title %></h1>
       </div>
@@ -19,4 +20,5 @@
       </div>
     <%= link_to 'Edit', edit_blog_path(@blog), class: "functional" %> |
     <%= link_to 'Back', blogs_path, class: "functional" %>
+    <% end %>
 </div>

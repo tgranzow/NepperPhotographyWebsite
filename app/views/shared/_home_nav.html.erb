@@ -22,6 +22,7 @@
                     <span class="home-navlinks"><%= link_to "Pricing", pages_pricing_path %></span>
                     <span class="home-navlinks"><%= link_to "Contact", pages_contact_me_path %></span>
                     <span class="home-navlinks"><%= link_to "Blog", pages_blog_path %></span>
+                    <span class="admin-drop"><%= render 'shared/admin_dropdown' if current_admin  %></span>
                 </span>
             </div>
         </div>

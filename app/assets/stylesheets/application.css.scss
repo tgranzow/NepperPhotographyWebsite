@@ -174,7 +174,6 @@ html, body {
 #image-content {
     width: 100%;
     display: inline-block;
-    border-bottom: 1px solid black;
 }
 .show-img {
     margin-left: 25%;
@@ -233,4 +232,38 @@ html, body {
     margin: 0 auto;
     margin-bottom: 20px;
     border-radius: 4px;
+}
+
+/*
+* Admin Styles
+*/
+
+#login {
+    text-align: center;
+    font-size: 1.2em;
+    padding-bottom: 30px;
+}
+
+.login-card {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.login-field {
+    padding: 10px;
+}
+
+.admin-drop {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.admin-button {
+    background-color: transparent;
+    font-family: "Raleway";
+    font-weight: 100;
+    font-size: 1.4em;
+    display: inline-block;
 }
