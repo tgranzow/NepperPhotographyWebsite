@@ -4,7 +4,9 @@
         <tbody>
             <% @testimonials.each do |testimonial| %>
         <tr>
-          <td class="testimonial-post"><%= testimonial.posts %></td>
+          <td>
+          <div class="testimonial-post"><%= testimonial.posts %></div>
+      </td>
         </tr>
         <% end %>
       </tbody>

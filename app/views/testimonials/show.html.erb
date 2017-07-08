@@ -1,9 +1,13 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+    <div class="card testimonial-card">
+        <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Testimonial:</strong>
-  <%= @testimonial.posts %>
-</p>
+        <p>
+          <strong>Testimonial:</strong>
+          <%= @testimonial.posts %>
+        </p>
 
-<%= link_to 'Edit', edit_testimonial_path(@testimonial) %> |
-<%= link_to 'Back', testimonials_path %>
+        <%= link_to 'Edit', edit_testimonial_path(@testimonial) %> |
+        <%= link_to 'Back', testimonials_path %>
+    </div>
+</div>

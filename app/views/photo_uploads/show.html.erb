@@ -15,31 +15,31 @@
 
                           <% imgCounter = 1 %>
                         <% @photo_upload.images.each_with_index do |image, index| %>
-                              <%= image_tag(image.url, :onclick => "openModal();currentSlide(#{imgCounter})", title: imgCounter, class: "box-hover-shadow cursor") %>
+                              <%= image_tag(image.url, :onclick => "openModal();currentSlide(#{imgCounter})", class: "box-hover-shadow cursor") %>
                              <% if current_admin  %>
                               <%= link_to "Delete", photo_upload_image_path(@photo_upload, index), method: :delete, data: {confirm: "Are you sure you want to delete this image?"} %>
                               <% end %>
                               <% imgCounter += 1 %>
                         <% end %>
 
-                    <% imgCounter = 1 %>
-                    <div id="myModal" class="modal">
-                      <span class="box-close cursor", onclick="closeModal()">&times;</span>
-                      <div class="modal-content1">
-                      <% @photo_upload.images.each_with_index do |image, index| %>
-                      <div class="box-mySlides">
-                          <div class="box-numbertext"><%= imgCounter %>/<%= imgCount %></div>
-                            <div class="inner-box"><%= image_tag(image.url, class: "portfolio-show-img") %></div>
-                        </div>
-                            <% imgCounter += 1 %>
-                      <% end %>
-                      <a class="box-prev" onclick="plusSlides(-1)">&#10094;</a>
-                      <a class="box-next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
+                        <% imgCounter = 1 %>
+                        <div id="myModal" class="modal">
+                          <span class="box-close cursor", onclick="closeModal()">&times;</span>
+                          <div class="modal-content1">
+                          <% @photo_upload.images.each_with_index do |image, index| %>
+                          <div class="box-mySlides">
+                              <div class="box-numbertext"><%= imgCounter %>/<%= imgCount %></div>
+                                <div class="inner-box"><%= image_tag(image.url, class: "portfolio-show-img") %></div>
+                            </div>
+                                <% imgCounter += 1 %>
+                          <% end %>
+                          <a class="box-prev" onclick="plusSlides(-1)">&#10094;</a>
+                          <a class="box-next" onclick="plusSlides(1)">&#10095;</a>
+                      </div>
+                    </div>
                 </div>
+              </div>
             </div>
-          </div>
-        </div>
 
 
     <% if current_admin %>
